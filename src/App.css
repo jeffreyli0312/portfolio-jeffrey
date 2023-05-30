@@ -5,18 +5,8 @@
 } */
 
 body {
-  /* background-color: coral !important; */
-  /* background-color: #DDE6ED !important;
-  background-image: url("https://transparenttextures.com/patterns/asfalt-dark.png") !important; */
   background-color: #f1f6f9 !important;
-background-image: url("https://transparenttextures.com/patterns/absurdity.png") !important;
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  /* background-color: #27374D !important;
-  background-image: url("https://transparenttextures.com/patterns/cubes.png") !important; */
+  background-image: url("https://transparenttextures.com/patterns/absurdity.png") !important;
 }
 
 .test{
