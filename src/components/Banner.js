@@ -14,9 +14,9 @@ function Banner () {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(200 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Backend Developer", "Mechatronics Engineer" ];
+  const toRotate = [ "Full-Stack Developer", "Backend Developer", "Mechatronics Engineer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -46,7 +46,7 @@ function Banner () {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(150);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -61,7 +61,7 @@ function Banner () {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Jeffrey `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Backend Developer", "Mechatronics Engineer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Jeffrey `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full-Stack Developer", "Backend Developer", "Mechatronics Engineer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                   </p>
