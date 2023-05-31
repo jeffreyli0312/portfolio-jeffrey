@@ -34,6 +34,10 @@ body {
   background-color: #121212 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+
+  /* Below is diagonal cubes background */
+  background-color: #000000 !important;
+  background-image: url("https://transparenttextures.com/patterns/cubes.png") !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -234,16 +238,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+
+  /* This is the galaxy image */
+  /* background-image: url('./assets/img/banner-bg.png');  */
+
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.banner .tagline {
+.banner .tagline { /* "Welcome to my portfolio text */
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(119, 103, 190, 0.5) -5.91%, rgba(88, 85, 214, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
