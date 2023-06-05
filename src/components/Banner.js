@@ -76,13 +76,13 @@ function Banner () {
 
                   <div>
                   <a href={CV} download>
-                    <button style={{marginTop: '10px', float:'left',  marginRight: '20px', padding: '10px 10px 10px 10px', border: '1px solid white'}}>
+                    <button style={{marginTop: '10px', float:'left',  marginRight: '20px', padding: '10px 10px 12px 10px', border: '1px solid white'}}>
                       Download CV
                     </button>
                   </a>
                   
                     <Navbar.Brand href="#connect">
-                      <button style={{ marginTop: '10px', float:'left', display:'inline', padding: '10px 10px 10px 10px', padding: '10px 10px 10px 10px', border: '1px solid white'}}>Let’s Connect</button>
+                      <button style={{ marginTop: '10px', float:'left', display:'inline', padding: '10px 10px 10px 10px', padding: '10px 10px 10px 10px'}}>Let’s Connect<ArrowRightCircle size={25} /></button>
                       {/* <ArrowRightCircle size={25} /> */}
                     </Navbar.Brand>
                   </div>
