@@ -5,10 +5,13 @@ import Col from "react-bootstrap/Col";
 import headerImg from "../assets/img/header-img.svg";
 import test from "../assets/img/grad.PNG";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-// import 'animate.css';
+import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 import { HashLink } from 'react-router-hash-link';
+
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 function Banner () {
   const [loopNum, setLoopNum] = useState(0);
@@ -59,15 +62,17 @@ function Banner () {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
+              <div className="animate__animated animate__fadeIn">
+                <span className="tagline" id="about">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Jeffrey Li `} </h1>
                 <h1 className="typeAnimation"><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full-Stack Developer", "Backend Developer", "Mechatronics Engineer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                   </p>
                   {/* Button below is not currently a HashLink */}
-                  <button onClick={() => console.log('connect')} style={{marginTop: '10px'}}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <Navbar.Brand href="#connect">
+                    <button onClick={() => console.log('connect')} style={{marginTop: '10px'}}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  </Navbar.Brand>
               </div>}
             </TrackVisibility>
           </Col>

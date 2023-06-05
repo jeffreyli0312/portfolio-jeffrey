@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { React, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
-// import 'animate.css';
+import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 import { useRef } from 'react';
@@ -20,8 +20,15 @@ function Contact(){
               console.log(error.text);
           });
 
-          setFormDetails(formInitialDetails);
-          setButtonText("Sent!");
+          setButtonText("Sending...");
+
+          setTimeout(function(){
+            setFormDetails(formInitialDetails);
+            setButtonText("Sent ✔");
+
+          }, 1000);
+
+          
       };
 
   const formInitialDetails = {
@@ -76,8 +83,8 @@ function Contact(){
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Get In Touch</h2>
+                <div>
+                <h2>Contact Me</h2>
             <form name = "contact-form" ref={form} onSubmit={sendEmail}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
