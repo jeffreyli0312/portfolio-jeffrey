@@ -13,6 +13,8 @@ import { HashLink } from 'react-router-hash-link';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+import CV from '../assets/Resume_Winter2023.pdf'
+
 function Banner () {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -69,10 +71,25 @@ function Banner () {
                   <p>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                   </p>
-                  {/* Button below is not currently a HashLink */}
-                  <Navbar.Brand href="#connect">
-                    <button onClick={() => console.log('connect')} style={{marginTop: '10px'}}>Let’s Connect <ArrowRightCircle size={25} /></button>
-                  </Navbar.Brand>
+
+
+
+                  <div>
+                  <a href={CV} download>
+                    <button style={{marginTop: '10px', float:'left',  marginRight: '20px', padding: '10px 10px 10px 10px', border: '1px solid white'}}>
+                      Download CV
+                    </button>
+                  </a>
+                  
+                    <Navbar.Brand href="#connect">
+                      <button style={{ marginTop: '10px', float:'left', display:'inline', padding: '10px 10px 10px 10px', padding: '10px 10px 10px 10px', border: '1px solid white'}}>Let’s Connect</button>
+                      {/* <ArrowRightCircle size={25} /> */}
+                    </Navbar.Brand>
+                  </div>
+
+
+
+                  
               </div>}
             </TrackVisibility>
           </Col>
