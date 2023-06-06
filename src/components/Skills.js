@@ -8,13 +8,11 @@ import mongodb from "../assets/img/icons8-mongodb.svg";
 import excel from "../assets/img/icons8-excel.svg";
 import snowflake from "../assets/img/icons8-snowflake.svg";
 import sql from "../assets/img/icons8-sql.svg";
-// import knime from "../assets/img/knime.svg";
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
-// import colorSharp from "../assets/img/color-sharp.png"
 
 function Skills() {
   const responsive = {
