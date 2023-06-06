@@ -65,14 +65,15 @@ function Banner () {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className="animate__animated animate__fadeIn">
-                <span className="tagline" id="about">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Jeffrey Li `} </h1>
+                {/* <span className="tagline" id="about">Welcome to my Portfolio</span> */}
+                <h1 id="about">{`Hi! I'm Jeffrey Li `} </h1>
                 <h1 className="typeAnimation"><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full-Stack Developer", "Backend Developer", "Mechatronics Engineer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Hello! I am a second year Mechatronics student at the University of Waterloo with a strong passion for software development. Throughout my academic journey, I’ve gained experience in mechanical design, computer vision, 
+                    machine learning, and web development. Alongside a strong commitment to academic excellence, I actively seek to enhance my problem-solving skills with new projects, work experiences, and environments. I’m particularly 
+                    interested in building games, applications, and platforms that have the potential to help others, elevate quality of life, and even inspire positive global change. As a motivated team member, I consistently strive to 
+                    exceed expectations and push beyond boundaries. In my leisure time, you can find me collecting rare sneakers, playing competitive table tennis, and tailoring custom outerwear.
                   </p>
-
-
 
                   <div>
                   <a href={CV} download>
@@ -82,7 +83,7 @@ function Banner () {
                   </a>
                   
                     <Navbar.Brand href="#connect">
-                      <button style={{ marginTop: '10px', float:'left', display:'inline', padding: '10px 10px 10px 10px', padding: '10px 10px 10px 10px'}}>Let’s Connect<ArrowRightCircle size={25} /></button>
+                      <button style={{ marginTop: '10px', float:'left', display:'inline', padding: '10px 10px 10px 0px'}}>Let’s Connect<ArrowRightCircle size={25} /></button>
                       {/* <ArrowRightCircle size={25} /> */}
                     </Navbar.Brand>
                   </div>
@@ -98,7 +99,7 @@ function Banner () {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   {/* <img src={headerImg} alt="Header Img"/> */}
-                  <img src={test} alt="Header Img" style={{width: '350px', height: 'auto', borderRadius: '10%', marginLeft: '70px', marginTop: '15px', objectFit: 'contain'}} />
+                  <img src={test} alt="Header Img" style={{width: '350px', height: 'auto', borderRadius: '10%', marginLeft: '70px', marginTop: '25px', objectFit: 'contain'}} />
                 </div>}
             </TrackVisibility>
           </Col>

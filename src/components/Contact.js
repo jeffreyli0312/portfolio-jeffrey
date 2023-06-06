@@ -12,8 +12,13 @@ function Contact(){
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
-        emailjs.sendForm('service_3rjcrkv', 'template_hf1vsqr', form.current, '1DkbL1gCqXmpD-rF-')
+
+        console.log(formDetails);
+
+        if (formDetails.email == "" || formDetails.firstName == "" || formDetails.lastName == "" || formDetails.message == "" || formDetails.phone == "" ){
+          alert("Error: Form contains missing values");
+        } else {
+          emailjs.sendForm('service_3rjcrkv', 'template_hf1vsqr', form.current, '1DkbL1gCqXmpD-rF-')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -27,8 +32,8 @@ function Contact(){
             setButtonText("Sent ✔");
 
           }, 1000);
+        }
 
-          
       };
 
   const formInitialDetails = {
