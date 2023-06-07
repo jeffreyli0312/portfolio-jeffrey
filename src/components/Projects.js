@@ -1,44 +1,34 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+
+import medical from "../assets/img/project-medical-logo.jpg";
+import beSuccessful from "../assets/img/project-BeSuccessful.png";
+import client from "../assets/img/project-client.png";
+
+// 519 x 380
+
+import newTab from "../assets/img/icons8-new-tab.svg";
 
 function Projects(){
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: <a href='https://github.com/jeffreyli0312/medi-scanner' target='_blank' style={{color: 'white', textDecoration: 'none'}}>Medi-Scanner <img src={newTab} style={{height: 'auto', width:'6%'}}></img></a>,
+      description: <div style={{margin: '0px 35px 0px 35px', textAlign: 'left'}}><h7>Medi-Scanner classifies your injury severity with over 80% training accuracy, and instantly returns professional aftercare instructions. Medi-Scanner was built using Python Flask, OpenCV, TensorFlow ML, and frontend display.</h7></div>,
+      imgUrl: medical,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: <a href='https://github.com/jeffreyli0312/client-manager' target='_blank' style={{color: 'white', textDecoration: 'none'}}>Client Record System <img src={newTab} style={{height: 'auto', width:'6%'}}></img></a>,
+      description: <div style={{margin: '0px 35px 0px 35px', textAlign: 'left'}}><h7>Client Manager tracks and registers all clients using object-oriented design, polymorphism, algorithmic searching/sorting, and more. Customers can be upgraded, downgraded, modified, sorted, or searched.</h7></div>,
+      imgUrl: client,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: <a href='https://github.com/jeffreyli0312/BeSuccessful' target='_blank' style={{color: 'white', textDecoration: 'none'}}>BeSuccessful <img src={newTab} style={{height: 'auto', width:'6%'}}></img></a>,
+      description: <div style={{margin: '0px 35px 0px 35px', textAlign: 'left'}}><h7>Created using the MERN Stack (MongoDB, Express.js, React.js, Node.js), BeSuccessful serves as the social media platform that allows users to closely track and share their path towards reaching their goals. </h7></div>,
+      imgUrl: beSuccessful,
     },
   ];
 
@@ -51,7 +41,7 @@ function Projects(){
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2 id="projects">Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>My Recent Works</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   {/* <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
