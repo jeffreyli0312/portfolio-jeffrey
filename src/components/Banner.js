@@ -14,6 +14,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import CV from '../assets/Resume_Winter2023.pdf'
+import newTab from "../assets/img/icons8-new-tab.svg";
 
 function Banner () {
   const [loopNum, setLoopNum] = useState(0);
@@ -76,9 +77,9 @@ function Banner () {
                   </p>
 
                   <div>
-                  <a href={CV} download>
+                  <a href={CV} target= 'blank'>
                     <button style={{marginTop: '10px', float:'left',  marginRight: '20px', padding: '10px 10px 12px 10px', border: '1px solid white'}}>
-                      Download CV
+                      Resume<img src={newTab} style={{height: 'auto', width:'20%', animation: 'none', marginLeft: '6px'}}></img>
                     </button>
                   </a>
                   
